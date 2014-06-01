@@ -1,0 +1,38 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+
+#ifdef DEBUG
+#define LOG(...) NSLog(__VA_ARGS__)
+#define LOG_METHOD NSLog(@"%s", __func__)
+#else
+#define LOG(...) ;
+#define LOG_METHOD ;
+#endif
+
+
+#define HEXCOLOR(c) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 \
+green:((c>>8)&0xFF)/255.0 \
+blue:(c&0xFF)/255.0 \
+alpha:1.0];
+
+#define HEXCOLOR_WITH_ALPHA(c,a) [UIColor colorWithRed:((c>>16)&0xFF)/255.0 \
+green:((c>>8)&0xFF)/255.0 \
+blue:(c&0xFF)/255.0 \
+alpha:a];
+
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

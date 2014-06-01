@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54D1A76509394EA4A35CFE56 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64823CB28F403CB0EC2984 /* libPods.a */; };
+		FC15994A193B56900030AD63 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159943193B56900030AD63 /* libavformat.a */; };
+		FC15994B193B56900030AD63 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159944193B56900030AD63 /* libavutil.a */; };
+		FC15994C193B56900030AD63 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159945193B56900030AD63 /* libswresample.a */; };
+		FC15994D193B56900030AD63 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159946193B56900030AD63 /* libswscale.a */; };
+		FC15994E193B56900030AD63 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159947193B56900030AD63 /* libavcodec.a */; };
+		FC15994F193B56900030AD63 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159948193B56900030AD63 /* libavdevice.a */; };
+		FC159950193B56900030AD63 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159949193B56900030AD63 /* libavfilter.a */; };
+		FC159952193B640D0030AD63 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159951193B640D0030AD63 /* libz.dylib */; };
+		FC159954193B64180030AD63 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159953193B64180030AD63 /* libiconv.dylib */; };
+		FC3AE6BC19345DFE007F682B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6BB19345DFE007F682B /* Foundation.framework */; };
+		FC3AE6BE19345DFE007F682B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6BD19345DFE007F682B /* CoreGraphics.framework */; };
+		FC3AE6C019345DFE007F682B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6BF19345DFE007F682B /* UIKit.framework */; };
+		FC3AE6C619345DFE007F682B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3AE6C419345DFE007F682B /* InfoPlist.strings */; };
+		FC3AE6C819345DFE007F682B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6C719345DFE007F682B /* main.m */; };
+		FC3AE6CC19345DFE007F682B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6CB19345DFE007F682B /* AppDelegate.m */; };
+		FC3AE6CF19345DFE007F682B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3AE6CD19345DFE007F682B /* Main.storyboard */; };
+		FC3AE6D219345DFE007F682B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6D119345DFE007F682B /* ViewController.m */; };
+		FC3AE6D419345DFE007F682B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3AE6D319345DFE007F682B /* Images.xcassets */; };
+		FC3AE6DB19345DFE007F682B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6DA19345DFE007F682B /* XCTest.framework */; };
+		FC3AE6DC19345DFE007F682B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6BB19345DFE007F682B /* Foundation.framework */; };
+		FC3AE6DD19345DFE007F682B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3AE6BF19345DFE007F682B /* UIKit.framework */; };
+		FC3AE6E519345DFE007F682B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC3AE6E319345DFE007F682B /* InfoPlist.strings */; };
+		FC3AE6E719345DFE007F682B /* NicoMoviePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6E619345DFE007F682B /* NicoMoviePlayerTests.m */; };
+		FC3AE70419345E9A007F682B /* KxMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6F119345E99007F682B /* KxMovieViewController.m */; };
+		FC3AE70519345E9A007F682B /* NicoCommentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6F219345E99007F682B /* NicoCommentManager.m */; };
+		FC3AE70619345E9A007F682B /* CommentTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6F419345E99007F682B /* CommentTextLayer.m */; };
+		FC3AE70719345E9A007F682B /* KxAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6F619345E99007F682B /* KxAudioManager.m */; };
+		FC3AE70819345E9A007F682B /* kxmovie.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC3AE6F719345E9A007F682B /* kxmovie.bundle */; };
+		FC3AE70919345E9A007F682B /* KxMovieDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6F919345E9A007F682B /* KxMovieDecoder.m */; };
+		FC3AE70A19345E9A007F682B /* KxMovieGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6FB19345E9A007F682B /* KxMovieGLView.m */; };
+		FC3AE70B19345E9A007F682B /* NicoCommentUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE6FF19345E9A007F682B /* NicoCommentUtil.m */; };
+		FC3AE70C19345E9A007F682B /* VideoCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE70119345E9A007F682B /* VideoCacheManager.m */; };
+		FC3AE70D19345E9A007F682B /* VideoSeekSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3AE70319345E9A007F682B /* VideoSeekSlider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC3AE6DE19345DFE007F682B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC3AE6B019345DFE007F682B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC3AE6B719345DFE007F682B;
+			remoteInfo = NicoMoviePlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7D7ECA916DB04B59AFD204B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		EC64823CB28F403CB0EC2984 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC159943193B56900030AD63 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = FFmpegBuild/libs/libavformat.a; sourceTree = "<group>"; };
+		FC159944193B56900030AD63 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavutil.a; path = FFmpegBuild/libs/libavutil.a; sourceTree = "<group>"; };
+		FC159945193B56900030AD63 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = FFmpegBuild/libs/libswresample.a; sourceTree = "<group>"; };
+		FC159946193B56900030AD63 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = FFmpegBuild/libs/libswscale.a; sourceTree = "<group>"; };
+		FC159947193B56900030AD63 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavcodec.a; path = FFmpegBuild/libs/libavcodec.a; sourceTree = "<group>"; };
+		FC159948193B56900030AD63 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavdevice.a; path = FFmpegBuild/libs/libavdevice.a; sourceTree = "<group>"; };
+		FC159949193B56900030AD63 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavfilter.a; path = FFmpegBuild/libs/libavfilter.a; sourceTree = "<group>"; };
+		FC159951193B640D0030AD63 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FC159953193B64180030AD63 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		FC3AE6B819345DFE007F682B /* NicoMoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NicoMoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3AE6BB19345DFE007F682B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FC3AE6BD19345DFE007F682B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FC3AE6BF19345DFE007F682B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FC3AE6C319345DFE007F682B /* NicoMoviePlayer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NicoMoviePlayer-Info.plist"; sourceTree = "<group>"; };
+		FC3AE6C519345DFE007F682B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC3AE6C719345DFE007F682B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC3AE6C919345DFE007F682B /* NicoMoviePlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NicoMoviePlayer-Prefix.pch"; sourceTree = "<group>"; };
+		FC3AE6CA19345DFE007F682B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC3AE6CB19345DFE007F682B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC3AE6CE19345DFE007F682B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC3AE6D019345DFE007F682B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC3AE6D119345DFE007F682B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC3AE6D319345DFE007F682B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC3AE6D919345DFE007F682B /* NicoMoviePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NicoMoviePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3AE6DA19345DFE007F682B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FC3AE6E219345DFE007F682B /* NicoMoviePlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NicoMoviePlayerTests-Info.plist"; sourceTree = "<group>"; };
+		FC3AE6E419345DFE007F682B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC3AE6E619345DFE007F682B /* NicoMoviePlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NicoMoviePlayerTests.m; sourceTree = "<group>"; };
+		FC3AE6F119345E99007F682B /* KxMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieViewController.m; sourceTree = "<group>"; };
+		FC3AE6F219345E99007F682B /* NicoCommentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NicoCommentManager.m; sourceTree = "<group>"; };
+		FC3AE6F319345E99007F682B /* CommentTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTextLayer.h; sourceTree = "<group>"; };
+		FC3AE6F419345E99007F682B /* CommentTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTextLayer.m; sourceTree = "<group>"; };
+		FC3AE6F519345E99007F682B /* KxAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxAudioManager.h; sourceTree = "<group>"; };
+		FC3AE6F619345E99007F682B /* KxAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxAudioManager.m; sourceTree = "<group>"; };
+		FC3AE6F719345E9A007F682B /* kxmovie.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = kxmovie.bundle; sourceTree = "<group>"; };
+		FC3AE6F819345E9A007F682B /* KxMovieDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieDecoder.h; sourceTree = "<group>"; };
+		FC3AE6F919345E9A007F682B /* KxMovieDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieDecoder.m; sourceTree = "<group>"; };
+		FC3AE6FA19345E9A007F682B /* KxMovieGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieGLView.h; sourceTree = "<group>"; };
+		FC3AE6FB19345E9A007F682B /* KxMovieGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMovieGLView.m; sourceTree = "<group>"; };
+		FC3AE6FC19345E9A007F682B /* KxMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMovieViewController.h; sourceTree = "<group>"; };
+		FC3AE6FD19345E9A007F682B /* NicoCommentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NicoCommentManager.h; sourceTree = "<group>"; };
+		FC3AE6FE19345E9A007F682B /* NicoCommentUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NicoCommentUtil.h; sourceTree = "<group>"; };
+		FC3AE6FF19345E9A007F682B /* NicoCommentUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NicoCommentUtil.m; sourceTree = "<group>"; };
+		FC3AE70019345E9A007F682B /* VideoCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCacheManager.h; sourceTree = "<group>"; };
+		FC3AE70119345E9A007F682B /* VideoCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCacheManager.m; sourceTree = "<group>"; };
+		FC3AE70219345E9A007F682B /* VideoSeekSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoSeekSlider.h; sourceTree = "<group>"; };
+		FC3AE70319345E9A007F682B /* VideoSeekSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoSeekSlider.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC3AE6B519345DFE007F682B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC159954193B64180030AD63 /* libiconv.dylib in Frameworks */,
+				FC159952193B640D0030AD63 /* libz.dylib in Frameworks */,
+				FC15994A193B56900030AD63 /* libavformat.a in Frameworks */,
+				FC15994B193B56900030AD63 /* libavutil.a in Frameworks */,
+				FC15994C193B56900030AD63 /* libswresample.a in Frameworks */,
+				FC15994D193B56900030AD63 /* libswscale.a in Frameworks */,
+				FC15994E193B56900030AD63 /* libavcodec.a in Frameworks */,
+				FC15994F193B56900030AD63 /* libavdevice.a in Frameworks */,
+				FC159950193B56900030AD63 /* libavfilter.a in Frameworks */,
+				FC3AE6BE19345DFE007F682B /* CoreGraphics.framework in Frameworks */,
+				FC3AE6C019345DFE007F682B /* UIKit.framework in Frameworks */,
+				FC3AE6BC19345DFE007F682B /* Foundation.framework in Frameworks */,
+				54D1A76509394EA4A35CFE56 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3AE6D619345DFE007F682B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3AE6DB19345DFE007F682B /* XCTest.framework in Frameworks */,
+				FC3AE6DD19345DFE007F682B /* UIKit.framework in Frameworks */,
+				FC3AE6DC19345DFE007F682B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC3AE6AF19345DFE007F682B = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6F019345E5A007F682B /* Classes */,
+				FC3AE6C119345DFE007F682B /* NicoMoviePlayer */,
+				FC3AE6E019345DFE007F682B /* NicoMoviePlayerTests */,
+				FC3AE6BA19345DFE007F682B /* Frameworks */,
+				FC3AE6B919345DFE007F682B /* Products */,
+				7D7ECA916DB04B59AFD204B3 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		FC3AE6B919345DFE007F682B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6B819345DFE007F682B /* NicoMoviePlayer.app */,
+				FC3AE6D919345DFE007F682B /* NicoMoviePlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC3AE6BA19345DFE007F682B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC159953193B64180030AD63 /* libiconv.dylib */,
+				FC159951193B640D0030AD63 /* libz.dylib */,
+				FC159943193B56900030AD63 /* libavformat.a */,
+				FC159944193B56900030AD63 /* libavutil.a */,
+				FC159945193B56900030AD63 /* libswresample.a */,
+				FC159946193B56900030AD63 /* libswscale.a */,
+				FC159947193B56900030AD63 /* libavcodec.a */,
+				FC159948193B56900030AD63 /* libavdevice.a */,
+				FC159949193B56900030AD63 /* libavfilter.a */,
+				FC3AE6BB19345DFE007F682B /* Foundation.framework */,
+				FC3AE6BD19345DFE007F682B /* CoreGraphics.framework */,
+				FC3AE6BF19345DFE007F682B /* UIKit.framework */,
+				FC3AE6DA19345DFE007F682B /* XCTest.framework */,
+				EC64823CB28F403CB0EC2984 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC3AE6C119345DFE007F682B /* NicoMoviePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6CA19345DFE007F682B /* AppDelegate.h */,
+				FC3AE6CB19345DFE007F682B /* AppDelegate.m */,
+				FC3AE6CD19345DFE007F682B /* Main.storyboard */,
+				FC3AE6D019345DFE007F682B /* ViewController.h */,
+				FC3AE6D119345DFE007F682B /* ViewController.m */,
+				FC3AE6D319345DFE007F682B /* Images.xcassets */,
+				FC3AE6C219345DFE007F682B /* Supporting Files */,
+			);
+			path = NicoMoviePlayer;
+			sourceTree = "<group>";
+		};
+		FC3AE6C219345DFE007F682B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6C319345DFE007F682B /* NicoMoviePlayer-Info.plist */,
+				FC3AE6C419345DFE007F682B /* InfoPlist.strings */,
+				FC3AE6C719345DFE007F682B /* main.m */,
+				FC3AE6C919345DFE007F682B /* NicoMoviePlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3AE6E019345DFE007F682B /* NicoMoviePlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6E619345DFE007F682B /* NicoMoviePlayerTests.m */,
+				FC3AE6E119345DFE007F682B /* Supporting Files */,
+			);
+			path = NicoMoviePlayerTests;
+			sourceTree = "<group>";
+		};
+		FC3AE6E119345DFE007F682B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6E219345DFE007F682B /* NicoMoviePlayerTests-Info.plist */,
+				FC3AE6E319345DFE007F682B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC3AE6F019345E5A007F682B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC3AE6F119345E99007F682B /* KxMovieViewController.m */,
+				FC3AE6F219345E99007F682B /* NicoCommentManager.m */,
+				FC3AE6F319345E99007F682B /* CommentTextLayer.h */,
+				FC3AE6F419345E99007F682B /* CommentTextLayer.m */,
+				FC3AE6F519345E99007F682B /* KxAudioManager.h */,
+				FC3AE6F619345E99007F682B /* KxAudioManager.m */,
+				FC3AE6F719345E9A007F682B /* kxmovie.bundle */,
+				FC3AE6F819345E9A007F682B /* KxMovieDecoder.h */,
+				FC3AE6F919345E9A007F682B /* KxMovieDecoder.m */,
+				FC3AE6FA19345E9A007F682B /* KxMovieGLView.h */,
+				FC3AE6FB19345E9A007F682B /* KxMovieGLView.m */,
+				FC3AE6FC19345E9A007F682B /* KxMovieViewController.h */,
+				FC3AE6FD19345E9A007F682B /* NicoCommentManager.h */,
+				FC3AE6FE19345E9A007F682B /* NicoCommentUtil.h */,
+				FC3AE6FF19345E9A007F682B /* NicoCommentUtil.m */,
+				FC3AE70019345E9A007F682B /* VideoCacheManager.h */,
+				FC3AE70119345E9A007F682B /* VideoCacheManager.m */,
+				FC3AE70219345E9A007F682B /* VideoSeekSlider.h */,
+				FC3AE70319345E9A007F682B /* VideoSeekSlider.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC3AE6B719345DFE007F682B /* NicoMoviePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3AE6EA19345DFE007F682B /* Build configuration list for PBXNativeTarget "NicoMoviePlayer" */;
+			buildPhases = (
+				28C906CD5DCF435183AF820A /* Check Pods Manifest.lock */,
+				FC3AE6B419345DFE007F682B /* Sources */,
+				FC3AE6B519345DFE007F682B /* Frameworks */,
+				FC3AE6B619345DFE007F682B /* Resources */,
+				69795A7608D74DAF917B69AE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NicoMoviePlayer;
+			productName = NicoMoviePlayer;
+			productReference = FC3AE6B819345DFE007F682B /* NicoMoviePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC3AE6D819345DFE007F682B /* NicoMoviePlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC3AE6ED19345DFE007F682B /* Build configuration list for PBXNativeTarget "NicoMoviePlayerTests" */;
+			buildPhases = (
+				FC3AE6D519345DFE007F682B /* Sources */,
+				FC3AE6D619345DFE007F682B /* Frameworks */,
+				FC3AE6D719345DFE007F682B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC3AE6DF19345DFE007F682B /* PBXTargetDependency */,
+			);
+			name = NicoMoviePlayerTests;
+			productName = NicoMoviePlayerTests;
+			productReference = FC3AE6D919345DFE007F682B /* NicoMoviePlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC3AE6B019345DFE007F682B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					FC3AE6D819345DFE007F682B = {
+						TestTargetID = FC3AE6B719345DFE007F682B;
+					};
+				};
+			};
+			buildConfigurationList = FC3AE6B319345DFE007F682B /* Build configuration list for PBXProject "NicoMoviePlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC3AE6AF19345DFE007F682B;
+			productRefGroup = FC3AE6B919345DFE007F682B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC3AE6B719345DFE007F682B /* NicoMoviePlayer */,
+				FC3AE6D819345DFE007F682B /* NicoMoviePlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC3AE6B619345DFE007F682B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3AE6D419345DFE007F682B /* Images.xcassets in Resources */,
+				FC3AE70819345E9A007F682B /* kxmovie.bundle in Resources */,
+				FC3AE6C619345DFE007F682B /* InfoPlist.strings in Resources */,
+				FC3AE6CF19345DFE007F682B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3AE6D719345DFE007F682B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3AE6E519345DFE007F682B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C906CD5DCF435183AF820A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69795A7608D74DAF917B69AE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC3AE6B419345DFE007F682B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3AE70C19345E9A007F682B /* VideoCacheManager.m in Sources */,
+				FC3AE70619345E9A007F682B /* CommentTextLayer.m in Sources */,
+				FC3AE70719345E9A007F682B /* KxAudioManager.m in Sources */,
+				FC3AE70B19345E9A007F682B /* NicoCommentUtil.m in Sources */,
+				FC3AE70419345E9A007F682B /* KxMovieViewController.m in Sources */,
+				FC3AE6D219345DFE007F682B /* ViewController.m in Sources */,
+				FC3AE70919345E9A007F682B /* KxMovieDecoder.m in Sources */,
+				FC3AE6CC19345DFE007F682B /* AppDelegate.m in Sources */,
+				FC3AE70519345E9A007F682B /* NicoCommentManager.m in Sources */,
+				FC3AE6C819345DFE007F682B /* main.m in Sources */,
+				FC3AE70D19345E9A007F682B /* VideoSeekSlider.m in Sources */,
+				FC3AE70A19345E9A007F682B /* KxMovieGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC3AE6D519345DFE007F682B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC3AE6E719345DFE007F682B /* NicoMoviePlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC3AE6DF19345DFE007F682B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC3AE6B719345DFE007F682B /* NicoMoviePlayer */;
+			targetProxy = FC3AE6DE19345DFE007F682B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC3AE6C419345DFE007F682B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3AE6C519345DFE007F682B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FC3AE6CD19345DFE007F682B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3AE6CE19345DFE007F682B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC3AE6E319345DFE007F682B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC3AE6E419345DFE007F682B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC3AE6E819345DFE007F682B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC3AE6E919345DFE007F682B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC3AE6EB19345DFE007F682B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7ECA916DB04B59AFD204B3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NicoMoviePlayer/NicoMoviePlayer-Prefix.pch";
+				INFOPLIST_FILE = "NicoMoviePlayer/NicoMoviePlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegBuild/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpegBuild/FFmpeg/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FC3AE6EC19345DFE007F682B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7ECA916DB04B59AFD204B3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NicoMoviePlayer/NicoMoviePlayer-Prefix.pch";
+				INFOPLIST_FILE = "NicoMoviePlayer/NicoMoviePlayer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFmpegBuild/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/FFmpegBuild/FFmpeg/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FC3AE6EE19345DFE007F682B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NicoMoviePlayer.app/NicoMoviePlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NicoMoviePlayer/NicoMoviePlayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NicoMoviePlayerTests/NicoMoviePlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FC3AE6EF19345DFE007F682B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NicoMoviePlayer.app/NicoMoviePlayer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NicoMoviePlayer/NicoMoviePlayer-Prefix.pch";
+				INFOPLIST_FILE = "NicoMoviePlayerTests/NicoMoviePlayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC3AE6B319345DFE007F682B /* Build configuration list for PBXProject "NicoMoviePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3AE6E819345DFE007F682B /* Debug */,
+				FC3AE6E919345DFE007F682B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3AE6EA19345DFE007F682B /* Build configuration list for PBXNativeTarget "NicoMoviePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3AE6EB19345DFE007F682B /* Debug */,
+				FC3AE6EC19345DFE007F682B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC3AE6ED19345DFE007F682B /* Build configuration list for PBXNativeTarget "NicoMoviePlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC3AE6EE19345DFE007F682B /* Debug */,
+				FC3AE6EF19345DFE007F682B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC3AE6B019345DFE007F682B /* Project object */;
+}
