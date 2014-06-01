@@ -3,7 +3,7 @@ NicoMoviePlayer - A movie player for iOS based on kxmovie.
 
 ### Build Instructions
 
-First you need to download, configure and build [FFmpeg](http://ffmpeg.org/index.html). For this, open console and type in:
+First you need to configure and build [FFmpeg](http://ffmpeg.org/index.html). For this, open console and type in:
 	
 	cd FFmpegBuild
 	rake
@@ -22,9 +22,9 @@ NicoMoviePlayer is available through CocoaPods, to install it simply add the fol
 	  @{
 	       @"vpos": @(0),
 	       @"body": @"NicoNico",
-	        @"position": @(COMMENT_POSITION_NORMAL),
-	        @"fontSize": @(COMMENT_SIZE_NORMAL),
-	        @"color": @(0xffffff),
+	       @"position": @(COMMENT_POSITION_NORMAL),
+	       @"fontSize": @(COMMENT_SIZE_NORMAL),
+	       @"color": @(0xffffff),
 	    }
 	  ];
 	[self presentViewController:movieViewController animated:YES completion:NULL];
