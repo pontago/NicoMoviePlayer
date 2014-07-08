@@ -94,7 +94,6 @@ static int64_t network_seek(void *h, int64_t pos, int whence) {
       network_read, NULL, network_seek);
     if (_ioContext) {
       _ioContext->max_packet_size = BUFFER_SIZE;
-      _ioContext->direct = 1;
       _url = url;
       [self _createConnection:-1];
     }

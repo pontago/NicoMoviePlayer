@@ -120,6 +120,10 @@ CGFloat const COMMENT_TOP_OR_BOTTOM_DURATION  = 3.f;
 
       if (currentTime >= [comment[@"vpos"] floatValue]) {
         [self _createCommentLayer:comment setPosition:NO pause:NO];
+
+        if ((i + 1) == max) {
+          _currentIndex = i + 1;
+        }
       }
       else {
         _currentIndex = i;
@@ -411,10 +415,10 @@ CGFloat const COMMENT_TOP_OR_BOTTOM_DURATION  = 3.f;
     NSInteger max = [_comments count];
     NSInteger i;
 
-    _currentIndex = 0;
-
     [CATransaction begin];
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
+
+    _currentIndex = 0;
 
     for (i = 0; i < max; i++) {
       NSDictionary *comment = _comments[i];
@@ -431,6 +435,8 @@ CGFloat const COMMENT_TOP_OR_BOTTOM_DURATION  = 3.f;
         [self _createCommentLayer:comment setPosition:NO pause:pause];
       }
     }
+
+    _currentIndex = i;
 
     [CATransaction commit];
 }

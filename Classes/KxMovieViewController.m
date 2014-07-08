@@ -198,6 +198,9 @@ static NSMutableDictionary * gHistory;
     UILabel             *_scrubbingLabel;
     BOOL                _savedPlayMode, _isSeek;
 
+    CGFloat             _lastDuration;
+    NSTimeInterval      _lastPresentTime;
+
     NicoCommentManager *_nicoCommentManager;
 }
 
@@ -1625,13 +1628,25 @@ static NSMutableDictionary * gHistory;
             
             if (_videoFrames.count > 0) {
                 
-                frame = _videoFrames[0];
-                [_videoFrames removeObjectAtIndex:0];
-                _bufferedDuration -= frame.duration;
+
+                if (floor(_lastDuration + _moviePosition) < floor(((KxVideoFrame*)_videoFrames[0]).position)) {
+                  const NSTimeInterval now = [NSDate timeIntervalSinceReferenceDate];
+
+                  _moviePosition += (now - _lastPresentTime);
+                  _lastPresentTime = [NSDate timeIntervalSinceReferenceDate];
+                }
+                else {
+                  frame = _videoFrames[0];
+                  [_videoFrames removeObjectAtIndex:0];
+                  _bufferedDuration -= frame.duration;
+                }
+
             }
         }
 
         if (frame) {
+          _lastPresentTime = [NSDate timeIntervalSinceReferenceDate];
+
           if (_backgroundMode) {
             _moviePosition = frame.position;
             interval = frame.duration;
@@ -1639,6 +1654,7 @@ static NSMutableDictionary * gHistory;
           else {
             interval = [self presentVideoFrame:frame];
           }
+          _lastDuration = interval;
         }
         
     } else if (_decoder.validAudio) {
@@ -1875,6 +1891,7 @@ static NSMutableDictionary * gHistory;
 - (void) setDecoderPosition: (CGFloat) position
 {
     _decoder.position = position;
+    _lastDuration = 0.f;
 }
 
 - (void) enableUpdateHUD

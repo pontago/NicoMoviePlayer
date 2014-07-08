@@ -13,7 +13,6 @@
 		FC15994C193B56900030AD63 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159945193B56900030AD63 /* libswresample.a */; };
 		FC15994D193B56900030AD63 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159946193B56900030AD63 /* libswscale.a */; };
 		FC15994E193B56900030AD63 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159947193B56900030AD63 /* libavcodec.a */; };
-		FC15994F193B56900030AD63 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159948193B56900030AD63 /* libavdevice.a */; };
 		FC159950193B56900030AD63 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159949193B56900030AD63 /* libavfilter.a */; };
 		FC159952193B640D0030AD63 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159951193B640D0030AD63 /* libz.dylib */; };
 		FC159954193B64180030AD63 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FC159953193B64180030AD63 /* libiconv.dylib */; };
@@ -110,14 +109,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC15994C193B56900030AD63 /* libswresample.a in Frameworks */,
 				FC159954193B64180030AD63 /* libiconv.dylib in Frameworks */,
 				FC159952193B640D0030AD63 /* libz.dylib in Frameworks */,
 				FC15994A193B56900030AD63 /* libavformat.a in Frameworks */,
 				FC15994B193B56900030AD63 /* libavutil.a in Frameworks */,
-				FC15994C193B56900030AD63 /* libswresample.a in Frameworks */,
 				FC15994D193B56900030AD63 /* libswscale.a in Frameworks */,
 				FC15994E193B56900030AD63 /* libavcodec.a in Frameworks */,
-				FC15994F193B56900030AD63 /* libavdevice.a in Frameworks */,
 				FC159950193B56900030AD63 /* libavfilter.a in Frameworks */,
 				FC3AE6BE19345DFE007F682B /* CoreGraphics.framework in Frameworks */,
 				FC3AE6C019345DFE007F682B /* UIKit.framework in Frameworks */,

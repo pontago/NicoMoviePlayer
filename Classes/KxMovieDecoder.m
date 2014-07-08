@@ -477,8 +477,8 @@ static int interrupt_callback(void *ctx);
         int64_t ts = (int64_t)(seconds / _audioTimeBase);
 //        avformat_seek_file(_formatCtx, _audioStream, ts, ts, ts, AVSEEK_FLAG_FRAME);
         avformat_seek_file(_formatCtx, _audioStream, INT64_MIN, ts, ts, AVSEEK_FLAG_BACKWARD);
-        avcodec_flush_buffers(_audioCodecCtx);
     }
+    avcodec_flush_buffers(_audioCodecCtx);
 
     [self decodeSeek:_position];
 }
@@ -868,8 +868,8 @@ static int interrupt_callback(void *ctx);
     if (avcodec_open2(codecCtx, codec, NULL) < 0)
         return kxMovieErrorOpenCodec;
         
-    _videoFrame = avcodec_alloc_frame();
-    
+    _videoFrame = av_frame_alloc();
+
     if (!_videoFrame) {
         avcodec_close(codecCtx);
         return kxMovieErrorAllocateFrame;
@@ -945,7 +945,8 @@ static int interrupt_callback(void *ctx);
         }
     }
     
-    _audioFrame = avcodec_alloc_frame();
+    _audioFrame = av_frame_alloc();
+
     if (!_audioFrame) {
         if (swrContext)
             swr_free(&swrContext);
@@ -1553,7 +1554,6 @@ static int interrupt_callback(void *ctx);
         if (_interruptSeek) break;
 
         if (av_read_frame(_formatCtx, &packet) < 0) {
-            _isEOF = YES;
             break;
         }
         
